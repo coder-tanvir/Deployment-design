@@ -106,7 +106,7 @@ img{
 .showcase-form input[type='text'],
 .showcase-form input[type='email']{
     border:0;
-    border-bottom:1px solid #b4becb;
+    border-bottom:1px solid var(--primary-color);
     width:100%;
     padding:3px;
     font-size:16px;
@@ -131,6 +131,24 @@ img{
     -ms-transform:skewY(-5deg);
 }
 
+/*************Stats***************************/
+.stats{
+    padding-top:100px;
+}
+
+.stats-heading{
+    max-width: 500px;
+    margin:auto;
+}
+
+.stats .grid h3{
+    font-size:35px;
+}
+
+.stats .grid p{
+    font-size:20px;
+    font-weight:bold;
+}
 /***********Utilities*************************/
 .container{
     max-width: 1100px;
@@ -182,4 +200,94 @@ img{
 
 .btn:hover{
     transform: scale(.95);
+}
+
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.my-1{
+    margin: 1rem 0;
+}
+
+.my-2{
+    margin: 1.5rem 0;
+}
+
+.my-3{
+    margin: 2rem 0;
+}
+
+.my-4{
+    margin: 3rem 0;
+}
+
+.my-5{
+    margin: 4rem 0;
+}
+
+.m-1{
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 1.5rem;
+}
+
+.m-3{
+    margin: 2rem ;
+}
+
+.m-4{
+    margin: 3rem;
+}
+
+.m-5{
+    margin: 4rem;
+}
+
+
+.py-1{
+    padding: 1rem 0;
+}
+
+.py-2{
+    padding: 1.5rem 0;
+}
+
+.py-3{
+    padding: 2rem 0;
+}
+
+.py-4{
+    padding: 3rem 0;
+}
+
+.py-5{
+    padding: 4rem 0;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 1.5rem;
+}
+
+.p-3{
+    padding: 2rem ;
+}
+
+.p-4{
+    padding: 3rem;
+}
+
+.p-5{
+    padding: 4rem;
 }
