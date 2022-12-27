@@ -201,7 +201,34 @@ img{
     margin-right: 20px;
 }
 
+/*********************Docs*******************/
+.docs-head{
+    text-align: center;
+}
+.docs-head img{
+    width:350px;
+    justify-self:flex-end;
+}
 
+.docs-main h3{
+    margin:20px 0;
+}
+
+.docs-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items:flex-start;
+}
+
+.docs-main nav li{
+    font-size:17px;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    border-bottom:1px solid var(--secondary-color);
+}
+
+.docs-main a:hover{
+    font-weight:bold;
+}
 /***************Footer***********************/
 .footer a{
     color:#fff;
@@ -423,6 +450,16 @@ img{
     .features-head img{
         width:300px;
         justify-self:center;
+    }
+
+    .docs-head img{
+        width:250px;
+        justify-self:center;
+    }
+
+    .footer{
+        text-align: center;
+        justify-content: center;
     }
 }
 
