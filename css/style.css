@@ -148,6 +148,7 @@ img{
 
 .stats .grid h3{
     font-size:35px;
+    color:var(--primary-color)
 }
 
 .stats .grid p{
@@ -176,6 +177,8 @@ img{
 .languages .flex{
     flex-wrap: wrap;
 }
+
+
 .languages .card{
     text-align:center;
     margin:18px 10px 40px;
@@ -250,6 +253,7 @@ img{
     font-weight:bold;
     margin:2rem 0;
 }
+
 /***************Footer***********************/
 .footer a{
     color:#fff;
