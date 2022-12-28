@@ -20,6 +20,7 @@ body{
     font-family:'Lato',sans-serif;
     color:#333;
     line-height: 1.6;
+   
 }
 
 ul{
@@ -207,8 +208,10 @@ img{
 }
 
 /*********************Docs*******************/
+
 .docs-head{
     text-align: center;
+    
 }
 .docs-head img{
     width:350px;
@@ -354,7 +357,7 @@ code,pre{
 }
 
 .xl{
-    font-size:4rem;
+    font-size:3.5rem;
 }
 
 .btn:hover{
@@ -492,6 +495,13 @@ code,pre{
     .footer{
         text-align: center;
         justify-content: center;
+    }
+
+    .docs-main,
+    .docs-head{
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
     }
 }
 
