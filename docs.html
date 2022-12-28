@@ -20,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Features</a></li>
+                    <li><a href="features.html">Features</a></li>
                     <li><a href="docs.html">Docs</a></li>
                 </ul>
             </nav>
@@ -35,6 +35,7 @@
                 <ul class="lead">
                     <li>Read the Docs</li>
                     <li>Follow the steps</li>
+                    <li>Deploy your application</li>
 
                 </ul>
             </div>
@@ -42,40 +43,42 @@
         </div>
     </section>
     <!------------------Head---------------------------------------->
-   <!-------------------DocsMain----------------------->
+   <!-------------------DocsMain------------------------------------>
    <section class="docs-main my-4">
     <div class="container grid">
+        <!----Left card-------->
         <div class="card bg-light p-3">
             <h3 class="my-2">Essentials</h3>
             <nav>
                 <ul>
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">About Webify</a></li>
-                    <li><a href="#">Installation</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#introduction">Installation</a></li>
                 </ul>
             </nav>
 
             <h3 class="my-2">Deployments</h3>
             <nav>
                 <ul>
-                    <li><a href="#">using Cli</a></li>
-                    <li><a href="#">managing resources</a></li>
-                    <li><a href="#">Upgrade and downgrade</a></li>
+                    <li><a href="#using-cli">Using Cli</a></li>
+                    <li><a href="#deployment">Deployment</a></li>
+                    <li><a href="#database">Using database</a></li>
+                    <li><a href="#managing-resource">managing resources</a></li>
+                    
                 </ul>
             </nav>
         </div>
-        <div class="card">
+        <!----Left card---------->
+        <div class="card" id="introduction">
+            <div>
             <h2>Introduction</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Officia itaque ex aut odio dicta.
-                Quo accusamus dolorum sed officiis hic?
+            <p>Webify is a cloud service provider with new technologies.
+                Any project can be uploaded with little bit of effort.
             </p>
             <div class="alert alert-success">
-                <i class="fas fa-info"></i>Lorem ipsum dolor sit amet laud.
+                <i class="fas fa-info"></i> Webify backend does the heavy work.
             </div>
 
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quis?</p>
+            <h3>Install our client terminal</h3>
             <a href="#" class="btn btn-primary">Install Cli</a>
 
             <h3>Requirements</h3>
@@ -88,11 +91,92 @@
             <h3>Install</h3>
             <p>Mac(homebrew)</p>
             <pre><code>$ brew install webify-cli</code></pre>
-            <p>NPM</p>
+            <p>Npm</p>
             <pre><code>$ npm install webify-cli</code></pre>
             <p>Yarn</p>
             <pre><code>$ yarn install webify-cli</code></pre>
         </div>
+        <!----2nd card-->
+        <div id="using-cli">
+            <h2>Using client terminal</h2>
+            <p>
+                Your easily use client terminal to deploy your applications in our webify cloud platform.
+            </p>
+            <a href="#" class="btn btn-primary">Install Cli</a>
+
+            <h3>Requirements</h3>
+            <ul>
+                <li>Node.js --version 12 or higher</li>
+                <pre><code>$ npm upload $ projectname webify-cli </code></pre>
+                <li>Python --version 3.6 or higher</li>
+                <pre><code>$ python upload $ projectname webify-cli </code></pre>
+                <li>Go --version 7.3 or higher</li>
+                <pre><code>$ go upload $ projectname webify-cli </code></pre>
+                <li>php</li>
+                <pre><code>$ php upload $ projectname webify-cli </code></pre>
+            </ul>
+        </div>
+    
+        <!--2nd card------->
+
+                <!--3rd card-------->
+                <div id="deployment">
+                    <h2>Deployment</h2>
+                   <ul>
+                    <li>Sync your Github repository</li>
+                    <pre><code>$webify git sync project</code></pre>
+                    <pre><code>$webify --githubname --githubpswd --projectname sync webgit**</code></pre>
+                   </ul>
+                   <ul>
+                    <li>Folder from computer</li>
+                    <li>For Node.js</li>
+                    <pre><code>$npm build</code></pre>
+                    <pre><code>$webify upload $directory --projectname sync webgit**</code></pre>
+                    <li>For Python</li>
+                    <pre><code>$python build --projectname</code></pre>
+                    <pre><code>$webify upload $directory --projectname sync webgit**</code></pre>
+                   </ul>
+                </div>
+                <!--4th card-------->
+                <div id="database">
+                    <h2>Databases</h2>
+                   <ul>
+                    <li>Create your table on dynamodb webify using interface</li>
+                    <li>Use our dynamodb database</li>
+                    <pre><code>$webify git sync project</code></pre>
+                    <pre><code>$webify --githubname --githubpswd --projectname sync webgit**</code></pre>
+                    <pre><code>$webify use dynamodb --dbname</code></pre>
+                    <pre><code>$webify use dynamodb --projectname $request-method $request-page</code></pre>
+                   </ul>
+                   <ul>
+                    <li>Create your table on mongodb webify using interface</li>
+                    <li>Use our Mongodb database</li>
+                    <pre><code>$webify git sync project</code></pre>
+                    <pre><code>$webify --githubname --githubpswd --projectname sync webgit**</code></pre>
+                    <li>Create your table on mongodb webify using interface</li>
+                    <pre><code>$webify use mongodb --dbname</code></pre>
+                    <pre><code>$webify use mongodb --projectname $request-method $request-page</code></pre>
+                   </ul>
+                </div>
+                <!--4th card-------->
+                <!--5th card-------->
+        <div id="managing-resource">
+            <h2>Managing resource</h2>
+            <p>
+                webify allocates resources for application from pool of resources. Resource's demand is calculated based on
+                application's past usage. 
+            </p>
+            <div class="alert alert-success">
+                <i class="fas fa-info"></i>No resource is wasted
+            </div>
+            <p>
+                Database, authentication, cyclic graphs, automation every resources are pooled when needed. Webify backend 
+                technology is over 95% efficient to detect traffic and allocate resources.
+            </p>
+     
+        </div>
+        <!--5th card-------->
+    </div>
     </div>
    </section>
    <!--------------------DocsMain------------------------>

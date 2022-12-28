@@ -243,6 +243,13 @@ img{
 .alert i{
     margin-right:10px;
 }
+
+.card h2{
+    text-align:center;
+    color:var(--primary-color);
+    font-weight:bold;
+    margin:2rem 0;
+}
 /***************Footer***********************/
 .footer a{
     color:#fff;
